@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="tailwin img/logoooooooo-removebg-preview.png" width="">
+    <title>Oriflamme IT Solutions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container-2
+        {width: 90%;
+        margin: auto;
+    }
+
+    .nav-color{
+        background-color: #000000A6;
+        
+    }
+
+        .menu:hover .Sub-Menu {
+            display: block;
+        }
+
+       
+        .menu:hover .sub-menu-it-services{
+            display: block;
+        }
+
+        .menu:hover .sub-menu-web-services{
+            display: block;
+        }
+
+        .menu a{ 
+            position: relative;
+        }
+        .menu a:after{
+            content:"";
+            position: absolute;
+            background-color: pink;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.3s;
+        }
+
+        .menu a:hover:after{
+            width: 100%;
+        }
+        
+        
+        @media only screen and (max-width:1100px){
+           
+        .menu a:after{
+                height: 0;
+            }
+       
+        }
+
+        .active{
+            color:pink;
+        }
+
+        /* .nav-color{
+            position: -webkit-sticky;
+            position: sticky;
+            top:0;
+        } */
+   
+    </style>
+</head>
+<body>
+    <div class="fixed w-full z-30">
+        <div class="  py-1  bg-slate-300 grid justify-items-center  w-full ">
+       
+            <a href="home.html"><img src="image/diamond.png" alt="" class="h-14"></a>
+        
+    </div>
+    <div class="nav-color   w-full text-center ">
+                <nav class=" flex  text-gray-300  justify-center items-center py-2 " >
+                    <!-- <div>
+                        <img src="tailwin img/logo.png" alt="" width="300px">
+                    </div> -->
+                    <div id="nav-menu" class="text-center">
+                            <ul class="flex text-lg menu-item  ">
+                                <li class="menu  capitalize active"><a href="home.html" class=" mx-4 ">HOME</a></li> 
+                                <li class="menu  capitalize "><a href="about.html"  class=" mx-4 ">ABOUT US</a>
+                                    </li>
+                                    <li class=" menu   uppercase capitalize"><a href="collection.html"  class=" mx-4 ">COLLECTION</i></a>
+                                    
+                                    </li>
+                                    
+                                    <li class="menu   "><a href="contactus.html"  class=" mx-4 capitalize">CONTACT US</a></li>
+                                    
+                        </ul>
+                    
+                    </div>
+                    
+                </nav> 
+    </div> 
+    </div>
+
+   <div class="pt-[108px]">
+    <div id="indicators-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-60 overflow-hidden md:h-96">
+             <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="image/Responsive-Banner.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="image/1X.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="image/bracelets.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="image/Desktop_1920-x560_toplisting.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="image/Mangalsutra.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+<div>
+
+
+ </div>
+<div class=" container-2">
+    
+   
+
+    <div class="slider">
+        <div class="grid grid-cols-2 py-4 gap-2 rounded-2xl">
+                <div class="first rounded-2xl" style="height: 600px;">
+                    <img class="box-image rounded-2xl" src="image/Responsive-Banner.jpg" alt="" style="height: 100%;">
+                    
+                </div>
+                <div style="height: 600px;">
+                    <div class="right pb-4 rounded-2xl" style="height: 400px;">
+                        <img class="box-image rounded-2xl" src="image/bracelets.webp" alt="" style="height: 100%;">
+                    </div >
+                            <div class="grid grid-cols-2 gap-2 rounded-2xl" style="height: 200px;">
+                                <div class="leftbottom">
+                                    <img class="box-image rounded-2xl" src="image/banner1.jpg" alt=""style="height: 100%;">
+                    
+                                </div>
+                                <div class="bottomright">
+                                    <img class="box-image rounded-2xl" src="image/banner0.jpg" alt=""style="height: 100%;">
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+   
+        <div class="grid grid-cols-2">
+            <div class="overflow-hidden"><img class="duration-1000 hover:scale-125" src="image/Collection_Borla.jpg" alt=""></div>
+            <div class="overflow-hidden"><img class="duration-1000 hover:scale-125" src="image/Collection_Harmony.jpg" alt=""></div>
+        </div>
+
+        <div>
+            <div class="w-full text-center my-4"><h1 class="text-lg font-bold">COLLECTION</h1></div>
+
+            <div class="my-8 grid grid-cols-4 gap-8 my-5 ">
+                <div class="drop-shadow-xl rounded-xl"><img class="rounded-xl" src="image/earrings3.jpg" alt=""></div>
+                <div class="drop-shadow-xl rounded-xl"><img class="rounded-xl" src="image/earrings3.jpg" alt=""></div>
+                <div class="drop-shadow-xl rounded-xl"><img class="rounded-xl" src="image/earrings3.jpg" alt=""></div>
+                <div class="drop-shadow-xl rounded-xl"><img class="rounded-xl" src="image/earrings3.jpg" alt=""></div>
+                <!-- <div class="drop-shadow-2xl rounded-xl"><img class="rounded-xl" src="image/earrings3.jpg" alt=""></div>
+                <div class="drop-shadow-2xl rounded-xl"><img class="rounded-xl" src="image/earrings3.jpg" alt=""></div>
+                <div class="drop-shadow-2xl rounded-xl"><img class="rounded-xl" src="image/earrings3.jpg" alt=""></div>
+                <div class="drop-shadow-2xl rounded-xl"><img class="rounded-xl" src="image/earrings3.jpg" alt=""></div> -->
+                
+            </div>
+               
+            </div>
+        </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ...............footer................ -->
+    <footer class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-10 pt-10  text-lg bg-slate-300">
+        <div class="text-left">
+        <div>
+            <img src="tailwin img/ori.png" alt="" width="350px">
+        </div>
+        <p class="cursor-pointer"><a href=""><i class="fa-regular fa-envelope"></i> pravin@oriflammeitsolutions.com</a></p>
+        <p class="cursor-pointer"><a href="https://api.whatsapp.com/send?phone=9930646412"><i class="fa-brands fa-square-whatsapp"></i> +91-9930425384/ 9930646412</a></p>
+    </div>
+    
+        <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">IT SERVICES</h3>
+            <ul>
+                <li>Managed IT Services</li>
+                <li>Networking Solutions</li>
+                <li>Virtualization</li>
+                <li>Network Sercurity</li>
+                <li>AMC/CIO Services</li>
+                <li>Cloud Technology</li>
+                <li>Section 8 Company</li>
+                <li>Backup & Disaster Recoverys</li>
+                <li><a href="">licensing</a></li>
+            </ul>
+        </div>
+
+       <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">WEB SERVICES</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>GST Return Filing</li>
+                <li>Creative Services</li>
+                <li>App Development</li>
+                <li>Mobile App Dev</li>
+                <li>Digital Marketing</li>
+                <li>Support & Maintenance</li>
+                <li>Digital Marketing</li>
+                <li><a href="">BULK SMS SERVICES</a></li>
+            </ul>
+        </div>
+
+        <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">SURVEILLANCE SERVICES</h3>
+            <ul>
+                <li>Video Surveillance</li>
+                <li>Access Control</li>
+                <li>Creative Services</li>
+                <li>Attendance Solutions</li>
+                <li>Intrusion Alarm</li>
+            </ul>
+            <div>
+                <a href="www.twitter.com" ><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.linkedin.com"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+        </div>
+     
+    </footer>
+     
+    
+
+     <!-- <script>
+        function myFunction() {
+          var x = document.getElementById("nav-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script> -->
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+</body>
+</html>

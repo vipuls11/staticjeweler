@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="tailwin img/logoooooooo-removebg-preview.png" width="">
+    <title>Oriflamme IT Solutions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container-2
+        {width: 90%;
+        margin: auto;
+    }
+
+    .nav-color{
+        background-color: #000000A6;
+       
+    }
+
+        .menu:hover .Sub-Menu {
+            display: block;
+        }
+
+       
+        .menu:hover .sub-menu-it-services{
+            display: block;
+        }
+
+        .menu:hover .sub-menu-web-services{
+            display: block;
+        }
+
+        .menu a{ 
+            position: relative;
+        }
+        .menu a:after{
+            content:"";
+            position: absolute;
+            background-color: pink;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.3s;
+        }
+
+        .menu a:hover:after{
+            width: 100%;
+        }
+        
+        
+        @media only screen and (max-width:1100px){
+           
+            .menu a:after{
+                height: 0;
+            }
+        
+        }
+
+        .active{
+            color:pink;
+        }
+
+
+   
+    </style>
+</head>
+<body>
+    <div class="fixed w-full z-30">
+        <div class="  py-1  bg-slate-300 grid justify-items-center  w-full ">
+       
+            <a href="home.html"><img src="image/diamond.png" alt="" class="h-14"></a>
+        
+    </div>
+    <div class="nav-color   w-full text-center ">
+                <nav class=" flex  text-gray-300  justify-center items-center py-2 " >
+                    <!-- <div>
+                        <img src="tailwin img/logo.png" alt="" width="300px">
+                    </div> -->
+                    <div id="nav-menu" class="text-center">
+                            <ul class="flex text-lg menu-item  ">
+                                <li class="menu  capitalize "><a href="home.html" class=" mx-4 ">HOME</a></li> 
+                                <li class="menu  capitalize "><a href="about.html"  class=" mx-4 ">ABOUT US</a>
+                                    </li>
+                                    <li class=" menu   uppercase capitalize active"><a href="collection.html"  class=" mx-4 ">COLLECTION</i></a>
+                                    
+                                    </li>
+                                    
+                                    <li class="menu   "><a href="contactus.html"  class=" mx-4 capitalize">CONTACT US</a></li>
+                                    
+                        </ul>
+                    
+                    </div>
+                    
+                </nav> 
+    </div> 
+    </div>
+
+   <div class="pt-[108px]">
+    <div id="indicators-carousel" class="relative" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-60 overflow-hidden md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="image/Responsive-Banner.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/1X.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/bracelets.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/Desktop_1920-x560_toplisting.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/Mangalsutra.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+   <div class="container-2">
+    <div class="flex justify-between items-center border-b border-gray-200 dark:border-gray-700">
+        <h1 class="text-lg font-medium">All Jewellery Collection</h1>
+        <div class="mb-2 ">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block py-4 px-2 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                        <path d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z"/>
+                      </svg></button>
+                </li>
+                <li class="mr-2" role="presentation">
+                      <button class="inline-block py-4 px-2  border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                      </svg>
+                        </button>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+
+<div id="myTabContent">
+    
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+        <div>
+            <!-- ✅ Grid Section - Starts Here 👇 -->
+            <section
+                class="w-fit mx-auto  grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2  justify-center gap-y-10 gap-x-5 mt-10 mb-5 mx-2">
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+              <!--   ✅ Product card 1 - Starts Here 👇 -->
+              <div
+              class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                  <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                 
+              <div class="px-4 py-3 w-72">
+                  <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                  <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                  
+                  
+              </div>
+
+          </div>
+          <!--   🛑 Product card 1 - Ends Here  -->
+
+          <!--   ✅ Product card 1 - Starts Here 👇 -->
+          <div
+          class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+              <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+             
+          <div class="px-4 py-3 w-72">
+              <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+              <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+              
+              
+          </div>
+
+      </div>
+      <!--   🛑 Product card 1 - Ends Here  -->
+
+      <!--   ✅ Product card 1 - Starts Here 👇 -->
+      <div
+      class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+          <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+         
+      <div class="px-4 py-3 w-72">
+          <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+          <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+          
+          
+      </div>
+
+  </div>
+  <!--   🛑 Product card 1 - Ends Here  -->
+
+  <!--   ✅ Product card 1 - Starts Here 👇 -->
+  <div
+  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+     
+  <div class="px-4 py-3 w-72">
+      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+      
+      
+  </div>
+
+</div>
+<!--   🛑 Product card 1 - Ends Here  -->
+<!--   ✅ Product card 1 - Starts Here 👇 -->
+<div
+class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+    <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+   
+<div class="px-4 py-3 w-72">
+    <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+    <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+    
+    
+</div>
+
+</div>
+<!--   🛑 Product card 1 - Ends Here  -->
+
+<!--   ✅ Product card 1 - Starts Here 👇 -->
+<div
+class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+    <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+   
+<div class="px-4 py-3 w-72">
+    <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+    <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+    
+    
+</div>
+
+</div>
+<!--   🛑 Product card 1 - Ends Here  -->
+
+<!--   ✅ Product card 1 - Starts Here 👇 -->
+<div
+class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+    <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+   
+<div class="px-4 py-3 w-72">
+    <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+    <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+    
+    
+</div>
+
+</div>
+<!--   🛑 Product card 1 - Ends Here  -->
+              
+               
+
+
+            </section>
+        </div>
+        <!-- 🛑 Grid Section - Ends Here -->
+    </div>
+
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+        <div>
+            <!-- ✅ Grid Section - Starts Here 👇 -->
+            <section
+                class="w-fit mx-auto  grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  justify-center gap-y-14 gap-x-10 mt-10 mb-20 mx-28">
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+                <!--   ✅ Product card 1 - Starts Here 👇 -->
+                <div
+                    class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                        <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                       
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                        <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                        
+                        
+                    </div>
+
+                </div>
+                <!--   🛑 Product card 1 - Ends Here  -->
+
+                  <!--   ✅ Product card 1 - Starts Here 👇 -->
+                  <div
+                  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                     
+                  <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                      
+                      
+                  </div>
+
+              </div>
+              <!--   🛑 Product card 1 - Ends Here  -->
+
+              <!--   ✅ Product card 1 - Starts Here 👇 -->
+              <div
+              class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+                  <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                 
+              <div class="px-4 py-3 w-72">
+                  <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+                  <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+                  
+                  
+              </div>
+
+          </div>
+          <!--   🛑 Product card 1 - Ends Here  -->
+
+          <!--   ✅ Product card 1 - Starts Here 👇 -->
+          <div
+          class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+              <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+             
+          <div class="px-4 py-3 w-72">
+              <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+              <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+              
+              
+          </div>
+
+      </div>
+      <!--   🛑 Product card 1 - Ends Here  -->
+
+      <!--   ✅ Product card 1 - Starts Here 👇 -->
+      <div
+      class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+          <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+         
+      <div class="px-4 py-3 w-72">
+          <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+          <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+          
+          
+      </div>
+
+  </div>
+  <!--   🛑 Product card 1 - Ends Here  -->
+
+  <!--   ✅ Product card 1 - Starts Here 👇 -->
+  <div
+  class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+      <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+     
+  <div class="px-4 py-3 w-72">
+      <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+      <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+      
+      
+  </div>
+
+</div>
+<!--   🛑 Product card 1 - Ends Here  -->
+<!--   ✅ Product card 1 - Starts Here 👇 -->
+<div
+class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+    <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+   
+<div class="px-4 py-3 w-72">
+    <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+    <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+    
+    
+</div>
+
+</div>
+<!--   🛑 Product card 1 - Ends Here  -->
+
+<!--   ✅ Product card 1 - Starts Here 👇 -->
+<div
+class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+    <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+   
+<div class="px-4 py-3 w-72">
+    <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+    <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+    
+    
+</div>
+
+</div>
+<!--   🛑 Product card 1 - Ends Here  -->
+
+<!--   ✅ Product card 1 - Starts Here 👇 -->
+<div
+class="w-72 bg-white shadow-md rounded-xl duration-500 transform {{--hover:scale-105--}}  transition hover:shadow-xl">
+    <img src="image/earrings_product14.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+   
+<div class="px-4 py-3 w-72">
+    <span class="text-gray-400 mr-3  uppercase text-xs">Brand</span>
+    <p class="text-sm font-medium text-black truncate block capitalize">Earrings</p>
+    
+    
+</div>
+
+</div>
+<!--   🛑 Product card 1 - Ends Here  -->
+              
+               
+
+
+            </section>
+        </div>
+        <!-- 🛑 Grid Section - Ends Here -->
+    </div>
+</div>
+
+   </div>
+
+
+   
+
+    
+ 
+        
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ...............footer................ -->
+    <footer class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-10 pt-10  text-lg bg-slate-300">
+        <div class="text-left">
+        <div>
+            <img src="tailwin img/ori.png" alt="" width="350px">
+        </div>
+        <p class="cursor-pointer"><a href=""><i class="fa-regular fa-envelope"></i> pravin@oriflammeitsolutions.com</a></p>
+        <p class="cursor-pointer"><a href="https://api.whatsapp.com/send?phone=9930646412"><i class="fa-brands fa-square-whatsapp"></i> +91-9930425384/ 9930646412</a></p>
+    </div>
+    
+        <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">IT SERVICES</h3>
+            <ul>
+                <li>Managed IT Services</li>
+                <li>Networking Solutions</li>
+                <li>Virtualization</li>
+                <li>Network Sercurity</li>
+                <li>AMC/CIO Services</li>
+                <li>Cloud Technology</li>
+                <li>Section 8 Company</li>
+                <li>Backup & Disaster Recoverys</li>
+                <li><a href="">licensing</a></li>
+            </ul>
+        </div>
+
+       <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">WEB SERVICES</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>GST Return Filing</li>
+                <li>Creative Services</li>
+                <li>App Development</li>
+                <li>Mobile App Dev</li>
+                <li>Digital Marketing</li>
+                <li>Support & Maintenance</li>
+                <li>Digital Marketing</li>
+                <li><a href="">BULK SMS SERVICES</a></li>
+            </ul>
+        </div>
+
+        <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">SURVEILLANCE SERVICES</h3>
+            <ul>
+                <li>Video Surveillance</li>
+                <li>Access Control</li>
+                <li>Creative Services</li>
+                <li>Attendance Solutions</li>
+                <li>Intrusion Alarm</li>
+            </ul>
+            <div>
+                <a href="www.twitter.com" ><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.linkedin.com"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+        </div>
+     
+    </footer>
+     
+    
+
+     <!-- <script>
+        function myFunction() {
+          var x = document.getElementById("nav-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script> -->
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+</body>
+</html>

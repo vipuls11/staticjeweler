@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="tailwin img/logoooooooo-removebg-preview.png" width="">
+    <title>Jewellery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container-2
+        {width: 90%;
+        margin: auto;
+    }
+
+    .nav-color{
+        background-color: #000000A6;
+  
+    }
+
+        .menu:hover .Sub-Menu {
+            display: block;
+        }
+
+       
+        .menu:hover .sub-menu-it-services{
+            display: block;
+        }
+
+        .menu:hover .sub-menu-web-services{
+            display: block;
+        }
+
+        .menu a{ 
+            position: relative;
+        }
+        .menu a:after{
+            content:"";
+            position: absolute;
+            background-color: pink;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.3s;
+        }
+
+        .menu a:hover:after{
+            width: 100%;
+        }
+       
+    
+        
+        @media only screen and (max-width:1100px){
+            .menu a:after{
+                height: 0;
+            }
+        
+        
+        
+       
+
+        
+        }
+
+        .active{
+            color: pink;
+        }
+
+   
+    </style>
+</head>
+<body>
+    <div class="fixed w-full z-30">
+        <div class="  py-1  bg-slate-300 grid justify-items-center  w-full ">
+       
+            <a href="home.html"><img src="image/diamond.png" alt="" class="h-14"></a>
+        
+    </div>
+    <div class="nav-color   w-full text-center ">
+                <nav class=" flex  text-gray-300  justify-center items-center py-2 " >
+                    <!-- <div>
+                        <img src="tailwin img/logo.png" alt="" width="300px">
+                    </div> -->
+                    <div id="nav-menu" class="text-center">
+                            <ul class="flex text-lg menu-item  ">
+                                <li class="menu  capitalize "><a href="home.html" class=" mx-4 ">HOME</a></li> 
+                                <li class="menu  capitalize "><a href="about.html"  class=" mx-4 ">ABOUT US</a>
+                                    </li>
+                                    <li class=" menu   uppercase capitalize"><a href="collection.html"  class=" mx-4 ">COLLECTION</i></a>
+                                    
+                                    </li>
+                                    
+                                    <li class="menu   active"><a href="contactus.html"  class=" mx-4 capitalize">CONTACT US</a></li>
+                                    
+                        </ul>
+                    
+                    </div>
+                    
+                </nav> 
+    </div> 
+    </div>
+
+   <div class="pt-[108px]">
+    <div id="indicators-carousel" class="relative" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-60 overflow-hidden md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="image/Responsive-Banner.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/1X.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/bracelets.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/Desktop_1920-x560_toplisting.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/Mangalsutra.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+   <div class="bg-pink-300 py-2"><p class="text-xs px-20"><a href="home.html">Home </a>/<a href="contactus.html"> Contact Us</a> </p></div>
+   <div class="container-2">
+   
+
+    <div class="grid lg:grid-cols-2 my-20">
+        <div class="px-5">
+            <div>
+            <h1 class="text-2xl font-semibold py-5">Contact Us</h1>
+            <p class="text-lg font-medium pb-5 text-gray-500">Just pick up the phone and have a word with us. Or, write to us or simply walk into our office.</p>
+            </div>
+            <div>
+                <h1 class="text-2xl font-semibold py-5">Address</h1>
+                <p class="text-lg  pb-2 text-gray-500">1 King Street West, Suite 4800-54 Toronto, ON M5H 1A1
+                    1-888-354-0555</p>
+                    <p class="text-lg  pb-2 text-gray-500">Email Address:<a href="">aaaaaaa@gmail.com</a></p>
+                    <p class="text-lg pb-2 text-gray-500">Contact:<a href="">+91 00000 00000</a></p>
+                    <p class="text-lg  pb-2 text-gray-500"><a href="">support@abc.com</a></p>
+                </div>
+        </div>
+        <div>
+            <h1 class="text-3xl font-bold py-5">
+                Get In Touch With Us!
+            </h1>
+            <p class="text-lg font-medium pb-5 text-gray-500">Sometimes we might be out of office, in that case Don’t worry…just fill up the following form and we will get back to you at the earliest.</p>
+            
+            <form >
+                <div class=" w-full px-10">
+                  <div class="app-form">
+                    <div class="pb-4">
+                      <input class="app-form-control text-lg border border-gray-200 capitalize py-1 px-4 w-full outline-none outline-0 rounded-md" placeholder="Name" id="name" value="">
+                    </div>
+                    <div class="pb-4">
+                      <input class="app-form-control text-lg border border-gray-200 capitalize py-1 px-4 w-full outline-none outline-0 rounded-md" placeholder="Email" id="email">
+                    </div>
+                    <div class="pb-4">
+                      <input class="app-form-control text-lg border border-gray-200 capitalize py-1 px-4 w-full outline-none outline-0 rounded-md" placeholder="Contact no" id="contact">
+                    </div>
+                    <div class="pb-4" placeholder="MESSAGE"> 
+                          <textarea class="app-form-control text-lg border border-gray-200  py-2 px-4 w-full h-40 outline-none outline-0 rounded-md" placeholder="Message" id="message" cols="46" rows="3" name="comments"></textarea>
+                  </div>
+                    <div class="">
+                      <!-- <button class="app-form-button">CANCEL</button> -->
+                      <button class="app-form-button border border-neutral-500 px-10 py-2 text-lg font-semibold rounded-lg bg-pink-400 text-white hover:text-black" id="btn">SEND</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+    </div>
+   </div>
+
+   <div class="w-full ">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28612.632894790415!2d82.72019857664412!3d26.307741087055962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3990f9e131c254bd%3A0x2ed1cca6848a6f0a!2sJalalpur%2C%20Uttar%20Pradesh%20224149!5e0!3m2!1sen!2sin!4v1673425640137!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+
+    
+ 
+        
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ...............footer................ -->
+    <footer class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-10 pt-10  text-lg bg-slate-300">
+        <div class="text-left">
+        <div>
+            <img src="tailwin img/ori.png" alt="" width="350px">
+        </div>
+        <p class="cursor-pointer"><a href=""><i class="fa-regular fa-envelope"></i> pravin@oriflammeitsolutions.com</a></p>
+        <p class="cursor-pointer"><a href="https://api.whatsapp.com/send?phone=9930646412"><i class="fa-brands fa-square-whatsapp"></i> +91-9930425384/ 9930646412</a></p>
+    </div>
+    
+        <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">IT SERVICES</h3>
+            <ul>
+                <li>Managed IT Services</li>
+                <li>Networking Solutions</li>
+                <li>Virtualization</li>
+                <li>Network Sercurity</li>
+                <li>AMC/CIO Services</li>
+                <li>Cloud Technology</li>
+                <li>Section 8 Company</li>
+                <li>Backup & Disaster Recoverys</li>
+                <li><a href="">licensing</a></li>
+            </ul>
+        </div>
+
+       <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">WEB SERVICES</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>GST Return Filing</li>
+                <li>Creative Services</li>
+                <li>App Development</li>
+                <li>Mobile App Dev</li>
+                <li>Digital Marketing</li>
+                <li>Support & Maintenance</li>
+                <li>Digital Marketing</li>
+                <li><a href="">BULK SMS SERVICES</a></li>
+            </ul>
+        </div>
+
+        <div class="cursor-pointer">
+            <h3 class="text-3xl pb-5">SURVEILLANCE SERVICES</h3>
+            <ul>
+                <li>Video Surveillance</li>
+                <li>Access Control</li>
+                <li>Creative Services</li>
+                <li>Attendance Solutions</li>
+                <li>Intrusion Alarm</li>
+            </ul>
+            <div>
+                <a href="www.twitter.com" ><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.linkedin.com"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+        </div>
+     
+    </footer>
+     
+    
+
+     <!-- <script>
+        function myFunction() {
+          var x = document.getElementById("nav-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script> -->
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+</body>
+</html>
